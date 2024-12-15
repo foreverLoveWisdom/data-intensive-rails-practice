@@ -10,6 +10,17 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-10.times do |i|
-  Task.create(name: "Task #{i + 1}", description: "Description for task #{i + 1}")
+user = User.first || User.create(email: 'example@example.com', password: 'password')
+
+def create_tasks_for_user(user, task_count)
+  (1..task_count).each do |i|
+    Task.create!(
+      name: "Task #{i}",
+      description: "Description for task #{i}",
+      user_id: user.id
+    )
+  end
 end
+
+# Call the method to create tasks
+create_tasks_for_user(user, 10)
