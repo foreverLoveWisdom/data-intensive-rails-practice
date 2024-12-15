@@ -46,6 +46,6 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-gem 'devise', '~> 4.9', '>= 4.9.4'
+gem "devise", "~> 4.9", ">= 4.9.4"
 
-gem 'sidekiq', '~> 7.3', '>= 7.3.6'
+gem "sidekiq", "~> 7.3", ">= 7.3.6"

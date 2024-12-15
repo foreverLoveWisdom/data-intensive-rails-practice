@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   before_action :set_task, only: %i[show update destroy]
 
   def index
-    tasks = Rails.cache.fetch('tasks', expires_in: 5.minutes) { Task.all }
+    tasks = Rails.cache.fetch("tasks", expires_in: 5.minutes) { Task.all }
     render json: tasks
   end
 
