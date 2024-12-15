@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  postgres-primary:
+    image: postgres:13
+    container_name: postgres-primary
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "15432:5432"
+    volumes:
+      - pgdata_primary:/var/lib/postgresql/data
+
+  postgres-replica:
+    image: postgres:13
+    container_name: postgres-replica
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "15433:5432"
+    volumes:
+      - pgdata_replica:/var/lib/postgresql/data
+    depends_on:
+      - postgres-primary
+
+volumes:
+  pgdata_primary:
+  pgdata_replica:
