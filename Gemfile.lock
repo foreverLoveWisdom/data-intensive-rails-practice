@@ -178,7 +178,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.9)
-    psych (5.2.1)
+    psych (5.2.2)
       date
       stringio
     puma (6.5.0)
@@ -223,12 +223,12 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.2.1)
-    rdoc (6.9.0)
+    rdoc (6.9.1)
       psych (>= 4.0.0)
     redis-client (0.23.0)
       connection_pool
     regexp_parser (2.9.3)
-    reline (0.5.12)
+    reline (0.6.0)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
@@ -262,13 +262,13 @@ GEM
       rubocop-performance
       rubocop-rails
     ruby-progressbar (1.13.0)
-    securerandom (0.4.0)
+    securerandom (0.4.1)
     sidekiq (7.3.6)
       connection_pool (>= 2.3.0)
       logger
       rack (>= 2.2.4)
       redis-client (>= 0.22.2)
-    solid_cable (3.0.4)
+    solid_cable (3.0.5)
       actioncable (>= 7.2)
       activejob (>= 7.2)
       activerecord (>= 7.2)
@@ -297,7 +297,7 @@ GEM
     thruster (0.1.9-arm64-darwin)
     thruster (0.1.9-x86_64-darwin)
     thruster (0.1.9-x86_64-linux)
-    timeout (0.4.2)
+    timeout (0.4.3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (3.1.2)
